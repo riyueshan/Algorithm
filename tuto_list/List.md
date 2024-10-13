@@ -8,8 +8,8 @@ And to access to the list we need a pointer that points to the element of the li
 To simplify the manipulation of the list, here are several tricks like the **dummy node**,**sentinel node**,**rear pointer**.
 
 **Key**
-1. [ ] [structure of list](note/list__node.md/#key)
-2. [ ] [special node](note/list__node.md/#dummy-node)
+1. [ ] [structure of list](note/list__node.md#key)
+2. [ ] [special node](note/list__node.md#虚拟节点dummy-node)
 3. [ ] [special pointer]
 
 

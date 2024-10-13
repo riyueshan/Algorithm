@@ -7,10 +7,10 @@
 
 >  1. create a node
 > 
->       | type | Node | Node* |
->       | -------- | -------- | -------- |
->       | scope    | main    | function    |
->       |code|`Node node;`|`Node* node = (Node*)malloc(sizeof(Node));`|
+>       | type  | Node         | Node*                                       |
+>       |-------|--------------|---------------------------------------------|
+>       | scope | main         | function                                    |
+>       | code  | `Node node;` | `Node* node = (Node*)malloc(sizeof(Node));` |
 >  2. create a list `Node* list = NULL;`
 
 
@@ -33,7 +33,7 @@ list->next=&node;
 node->next=NULL;
 ```
 
->  - 当操作模块化为函数时，由于函数的参数传递机制，当涉及原链表元素修改时，需要传递头指针的地址，即`Node**`类型的指针，类似的，创建的Node也需要使用`Node*`类型来动态分配获取内存，这里通常将节点与**节点指针**混为一谈。[参考](pointer.md#as-prameter)
+>  - 当操作模块化为函数时，由于函数的参数传递机制，当~~涉及原链表元素修改~~涉及到头指针因删除或添加首元/头节点，需要修改头指针时，需传递头指针的地址，即`Node**`类型的指针。类似的，创建的Node也需要使用`Node*`类型来动态分配获取内存，这里通常将节点与**节点指针**混为一谈。[了解更多](pointer.md#as-prameter)
 >  - 为方便编程，建议定义一个`typedef Node* NodePtr`，这样可以直接使用`NodePtr`来代替`Node*`，使代码更加简洁。**注意的是，虽然`Node*`也为list，但那样定义不够直观**
 
 ## 虚拟节点(Dummy Node)

@@ -26,7 +26,7 @@ int main(void) {
         Node node;
         node.data.id = i;
         node.next = NULL;
-        insertNode(list, node);
+        insertNode1(&list, node);
     }
     printf("List before delete\n");
     printList(list);

@@ -64,17 +64,16 @@ void insertNode1(NodePtr *list, Node node) {
 
 void deleteNode(NodePtr list, Node node) {
     NodePtr p = list;
-    int index = searchNode(list, node);
+    const int index = searchNode(list, node);
     if (index == -1) {
         return;
     }
 
-    for (int i = 0; i < index; i++) {
-        /*NOTE: i<index
-         * increment to the former node of node to be deleted,
-         * thus p move to "node[index-1]"
-         */
-        p = p->next;
+    /*NOTE: i<index-1
+     * "list[i]" is the node to be deleted,
+     * thus p move to "list[i-1]".
+     */
+    for (int i = 0; i < index - 1; i++, p = p->next) {
     }
 
     if (p == list) {
@@ -92,7 +91,7 @@ void deleteNode(NodePtr list, Node node) {
 
 int searchNode(NodePtr list, Node node) {
     NodePtr p = list;
-    int counter = 0;
+    int index = 0;
 
     while (p) {
         /*NOTE: p or p->next
@@ -101,14 +100,10 @@ int searchNode(NodePtr list, Node node) {
          * which is **NULL**
          */
         if (p->data.id == node.data.id) {
-            if (list->data.id == HEAD_NODE_ID) {
-                // head node occupies one counter
-                return counter - 1;
-            }
-            return counter;
+            return index;
         }
         p = p->next;
-        counter++;
+        index++;
     }
 
     return -1;
