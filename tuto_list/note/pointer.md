@@ -1,9 +1,9 @@
 
-## Poniter and Functions
+## Pointer and Functions
 
-### As Prameter
+### As Parameter
 
-Since in C, every parameter is passed by value, if we want to modify the value of a variable in a function, the change will not be reflected back to the caller. However, when we use a pointer, though the change to pointer itslef stay unchanged outside the function, **the value it points** to can be changed, as the address is the same.
+Since in C, every parameter is passed by value, if we want to modify the value of a variable in a function, the change will not be reflected back to the caller. However, when we use a pointer, though the change to pointer itself stay unchanged outside the function, **the value it points** to can be changed, as the address is the same.
 
 
 ```c
@@ -51,7 +51,7 @@ The value of a before change 5
 The value of a after change 10
 ```
 
-Pass **the address of a parameter** to a function is a useful way to change the value of itself, without returning an aditional value. This also applies especially when we want to change the value of a pointer, like for a list or an array.
+Pass **the address of a parameter** to a function is a useful way to change the value of itself, without returning an additional value. This also applies especially when we want to change the value of a pointer, like for a list or an array.
 
 ### As Return Value
 

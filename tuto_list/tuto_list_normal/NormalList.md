@@ -23,7 +23,12 @@ Similarly, when it comes to the "index" of a list, where we can regard each node
 we can finally get address of `list[n]` and perform expression to `list[n-1]`
 
 ```c
-for(int i=0,Node* p= list;i<n;i++,p=p->next){
+~~for(int i=0,Node* p= list;i<n;i++,p=p->next)~~{
+}
+
+Node* p=list; // can't initialize different types of varibles in for loop
+for(int i=0;i<n;i++,p=p->next){
+
     ....//operation for list[i]
 }
 
@@ -34,11 +39,12 @@ for(int i=0,Node* p= list;i<n;i++,p=p->next){
 
 for a list with n nodes
 
-| Type  | `while(p)`       | `while(p->next)`          |
-| ----- | ---------------- | ------------------------- |
-| stop  | when `p` is NULL | when `p` is the last node |
-| index | `p` is `list[n]` | `p` is `list[n-1]`        |
-| usage | insert list[n]   | traverse to tail of list  |
+| Type   | `while(p)`         | `while(p->next)`          |
+| ------ | ------------------ | ------------------------- |
+| stop   | when `p` is NULL   | when `p` is the last node |
+| inside | `p` is `list[n-1]` | `p` is `list[n-2]`        |
+| final  | `p` is `list[n]`   | `p` is `list[n-1]`        |
+| usage  | insert list[n]     | traverse to tail of list  |
 
 >  - ⟹ **edge**
 > 
