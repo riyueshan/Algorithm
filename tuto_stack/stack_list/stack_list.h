@@ -5,14 +5,7 @@
 #ifndef STACK_LIST_H
 #define STACK_LIST_H
 
-typedef struct ID {
-    int id;
-} ID;
-
-typedef struct Data {
-    ID Id;
-    int value;
-} Data;
+#include "data.h"
 
 typedef struct Node {
     Data data;
