@@ -3,21 +3,20 @@
 
 #include "data_tree.h"
 
+BiTrNode *createBiTrNode(BiTrData data);
 
-BiNode *createBiNode(BiData data);
+BiTrNode *createBitree(BiTrData *data, int n);
 
-BiNode *createBitree(BiData *data, int n);
+void traversePreOrder(BiTrNode *root);
 
-void traversePreOrder(BiNode *root);
+void traverseInOrder(BiTrNode *root);
 
-void traverseInOrder(BiNode *root);
+void traversePostOrder(BiTrNode *root);
 
-void traversePostOrder(BiNode *root);
+void traverseLevelOrder(BiTrNode *root);
 
-void traverseLevelOrder(BiNode *root);
+void freeBiTree(BiTrNode **tree);
 
-void freeBiTree(BiNode **tree);
-
-void printBiNode(BiNode *node);
+void printBiTrNode(BiTrNode *node);
 
 #endif // TREE_BI_H

@@ -14,8 +14,8 @@ void freeLsQueue(LsQueue queue) {
 	}
 }
 
-QuNode *createQuNode(QuData data) {
-	QuNode *p = malloc(sizeof(QuNode));
+LsQuNode *createLsQuNode(LsQuData data) {
+	LsQuNode *p = malloc(sizeof(LsQuNode));
 	p->data_qu = data;
 	p->next = NULL;
 	return p;
@@ -25,28 +25,28 @@ int isQueueEmpty(LsQueue queue) {
 	return queue.front == NULL;
 }
 
-void enQueue(LsQueue *queue, QuNode *QuNode) {
+void enQueue(LsQueue *queue, LsQuNode *LsQuNode) {
 	if (isQueueEmpty(*queue)) {
-		queue->front = queue->rear = QuNode;
+		queue->front = queue->rear = LsQuNode;
 	} else {
-		queue->rear->next = QuNode;
-		queue->rear = QuNode;
+		queue->rear->next = LsQuNode;
+		queue->rear = LsQuNode;
 	}
 	queue->size++;
 }
 
-QuData deQueue(LsQueue *queue) {
+LsQuData deQueue(LsQueue *queue) {
 	if (isQueueEmpty(*queue))
-		return (QuData){0};
+		return (LsQuData){0};
 
 	// return the deleted data
 
-	QuNode *temp = queue->front->next;
-	QuData data = queue->front->data_qu;
+	LsQuNode *temp = queue->front->next;
+	LsQuData data = queue->front->data_qu;
 	free(queue->front);
 	queue->front = temp;
 	if (!queue->front)
-		queue->rear = NULL; // QuNode deleted is the last one
+		queue->rear = NULL; // LsQuNode deleted is the last one
 	queue->size--;
 	return data;
 }

@@ -24,3 +24,11 @@
 23	40	1730475596680935202	queue_ls	fd43c00af965f5db
 0	23	1730475627680384836	CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/main_tree_bi.c.o	bc740cafb1709c21
 24	43	1730475627704385184	tree_bi	5b0a2802ac591d
+4	78	1730476426509808657	CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/main_tree_bi.c.o	bc740cafb1709c21
+5	84	1730476426510808665	CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls.c.o	d2db647af1740f10
+2	92	1730476426507808640	CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/tree_bi.c.o	45ee7c3e558f92cd
+92	165	1730476426597809415	tree_bi	5b0a2802ac591d
+1	65	1730476593555361203	CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/tree_bi.c.o	45ee7c3e558f92cd
+65	88	1730476593619361837	tree_bi	5b0a2802ac591d
+1	82	1730476682776269496	CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/tree_bi.c.o	45ee7c3e558f92cd
+82	100	1730476682856270331	tree_bi	5b0a2802ac591d

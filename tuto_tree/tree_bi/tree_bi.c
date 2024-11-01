@@ -4,8 +4,8 @@
 #include "tree_bi.h"
 #include "queue_ls.h"
 
-BiNode *createBiNode(BiData data) {
-	BiNode *node = malloc(sizeof(BiNode));
+BiTrNode *createBiTrNode(BiTrData data) {
+	BiTrNode *node = malloc(sizeof(BiTrNode));
 	if (node == NULL) {
 		fprintf(stderr, "Memory allocation error\n");
 		exit(-1);
@@ -16,13 +16,11 @@ BiNode *createBiNode(BiData data) {
 	return node;
 }
 
-BiNode *createBitree(BiData *data, int n) {
+BiTrNode *createBitree(BiTrData *data, int n) {
 	LsQueue queue;
 	initLsQueue(&queue);
-	BiNode *root = createBiNode(data[0]);
-	BiNode *p = root;
-
-	QuData data_qu = {p};
+	BiTrNode *root = createBiTrNode(data[0]);
+	BiTrNode *p = root;
 
 	int i = 1;
 	while (i < n) {
@@ -31,9 +29,8 @@ BiNode *createBitree(BiData *data, int n) {
 			continue;
 		}
 
-		BiNode *node = createBiNode(data[i]);
-		data_qu.bi_node = node;
-		enQueue(&queue, createQuNode(data_qu));
+		BiTrNode *node = createBiTrNode(data[i]);
+		enQueue(&queue, createLsQuNode((LsQuData){node}));
 		i++;
 		if (p->left == NULL) {
 			p->left = node;
@@ -45,57 +42,54 @@ BiNode *createBitree(BiData *data, int n) {
 	return root;
 }
 
-
-void traversePreOrder(BiNode *root) {
+void traversePreOrder(BiTrNode *root) {
 	if (root) {
-		printBiNode(root);
+		printBiTrNode(root);
 		traversePreOrder(root->left);
 		traversePreOrder(root->right);
 	}
 }
 
-void traverseInOrder(BiNode *root) {
+void traverseInOrder(BiTrNode *root) {
 	if (root) {
 		traverseInOrder(root->left);
-		printBiNode(root);
+		printBiTrNode(root);
 		traverseInOrder(root->right);
 	}
 }
 
-void traversePostOrder(BiNode *root) {
+void traversePostOrder(BiTrNode *root) {
 	if (root) {
 		traversePostOrder(root->left);
 		traversePostOrder(root->right);
-		printBiNode(root);
+		printBiTrNode(root);
 	}
 }
 
-void traverseLevelOrder(BiNode *root) {
-	if (!root)return;
+void traverseLevelOrder(BiTrNode *root) {
+	if (!root)
+		return;
 	LsQueue queue;
 	initLsQueue(&queue);
 
-	BiNode *p = root;
-	QuData data_qu = {p};
-	enQueue(&queue, createQuNode(data_qu));
+	BiTrNode *p = root;
+	enQueue(&queue, createLsQuNode((LsQuData){p}));
 
 	while (!isQueueEmpty(queue)) {
 		p = deQueue(&queue).bi_node;
-		printBiNode(p);
+		printBiTrNode(p);
 		if (p->left) {
-			data_qu.bi_node = p->left;
-			enQueue(&queue, createQuNode(data_qu));
+			enQueue(&queue, createLsQuNode((LsQuData){p->left}));
 		}
 		if (p->right) {
-			data_qu.bi_node = p->right;
-			enQueue(&queue, createQuNode(data_qu));
+			enQueue(&queue, createLsQuNode((LsQuData){p->right}));
 		}
 	}
 
 	freeLsQueue(queue);
 }
 
-void freeBiTree(BiNode **tree) {
+void freeBiTree(BiTrNode **tree) {
 	if (*tree) {
 		freeBiTree(&(*tree)->left);
 		freeBiTree(&(*tree)->right);
@@ -103,6 +97,6 @@ void freeBiTree(BiNode **tree) {
 	}
 }
 
-void printBiNode(BiNode *node) {
+void printBiTrNode(BiTrNode *node) {
 	printf("%d\t%c\n", node->data_bi.id, node->data_bi.value);
 }

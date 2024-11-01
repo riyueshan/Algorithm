@@ -7,10 +7,9 @@
 
 #include "data_tree.h"
 
-typedef struct Lsqueue
-{
-	QuNode *front;
-	QuNode *rear;
+typedef struct Lsqueue {
+	LsQuNode *front;
+	LsQuNode *rear;
 	int size;
 } LsQueue;
 
@@ -18,12 +17,12 @@ void initLsQueue(LsQueue *queue);
 
 void freeLsQueue(LsQueue queue);
 
-QuNode *createQuNode(QuData data);
+LsQuNode *createLsQuNode(LsQuData data);
 
 int isQueueEmpty(LsQueue queue);
 
-void enQueue(LsQueue *queue, QuNode *QuNode);
+void enQueue(LsQueue *queue, LsQuNode *LsQuNode);
 
-QuData deQueue(LsQueue* queue);
+LsQuData deQueue(LsQueue *queue);
 
 #endif // QUEUE_LIST_H

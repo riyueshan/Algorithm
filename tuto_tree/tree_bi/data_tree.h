@@ -2,28 +2,28 @@
 // Created by riyueshan on 10/22/24.
 //
 
-#ifndef DATA_H
-#define DATA_H
+#ifndef DATA_TREE_H
+#define DATA_TREE_H
 
-typedef struct BiData {
+typedef struct BiTrData {
 	int id;
 	char value;
-} BiData;
+} BiTrData;
 
-typedef struct BiNode {
+typedef struct BiTrNode {
 	// binary linked list
-	BiData data_bi;
-	struct BiNode *left;
-	struct BiNode *right;
-} BiNode;
+	BiTrData data_bi;
+	struct BiTrNode *left;
+	struct BiTrNode *right;
+} BiTrNode;
 
-typedef struct QuData {
-	BiNode *bi_node;
-} QuData;
+typedef struct LsQuData {
+	BiTrNode *bi_node;
+} LsQuData;
 
-typedef struct QuNode {
-	QuData data_qu;
-	struct QuNode *next;
-} QuNode;
+typedef struct LsQuNode {
+	LsQuData data_qu;
+	struct LsQuNode *next;
+} LsQuNode;
 
-#endif // DATA_H
+#endif // DATA_TREE_H

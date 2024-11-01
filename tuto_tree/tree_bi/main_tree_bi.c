@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "tree_bi.h"
 
-BiData data[] = {
+BiTrData data[] = {
 	{1, 'A'},
 	{2, 'B'},
 	{3, 'C'},
@@ -31,7 +31,7 @@ BiData data[] = {
 };
 
 int main(void) {
-	BiNode *tree_bi = createBitree(data, 4);
+	BiTrNode *tree_bi = createBitree(data, 4);
 
 	traversePreOrder(tree_bi);
 
