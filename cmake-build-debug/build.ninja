@@ -41,75 +41,226 @@ include CMakeFiles/rules.ninja
 
 cmake_ninja_workdir = /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target Algorithm
+# Object build statements for EXECUTABLE target list
 
 
 #############################################
-# Order-only phony target for Algorithm
+# Order-only phony target for list
 
-build cmake_object_order_depends_target_Algorithm: phony || .
+build cmake_object_order_depends_target_list: phony || .
 
-build CMakeFiles/Algorithm.dir/Algorithm.c.o: C_COMPILER__Algorithm_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/Algorithm.c || cmake_object_order_depends_target_Algorithm
-  DEP_FILE = CMakeFiles/Algorithm.dir/Algorithm.c.o.d
+build CMakeFiles/list.dir/tuto_list/list/list.c.o: C_COMPILER__list_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_list/list/list.c || cmake_object_order_depends_target_list
+  DEP_FILE = CMakeFiles/list.dir/tuto_list/list/list.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I/home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_list
-  OBJECT_DIR = CMakeFiles/Algorithm.dir
-  OBJECT_FILE_DIR = CMakeFiles/Algorithm.dir
+  OBJECT_DIR = CMakeFiles/list.dir
+  OBJECT_FILE_DIR = CMakeFiles/list.dir/tuto_list/list
+
+build CMakeFiles/list.dir/tuto_list/list/main_list.c.o: C_COMPILER__list_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_list/list/main_list.c || cmake_object_order_depends_target_list
+  DEP_FILE = CMakeFiles/list.dir/tuto_list/list/main_list.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/list.dir
+  OBJECT_FILE_DIR = CMakeFiles/list.dir/tuto_list/list
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target Algorithm
+# Link build statements for EXECUTABLE target list
 
 
 #############################################
-# Link the executable Algorithm
+# Link the executable list
 
-build Algorithm: C_EXECUTABLE_LINKER__Algorithm_Debug CMakeFiles/Algorithm.dir/Algorithm.c.o
+build list: C_EXECUTABLE_LINKER__list_Debug CMakeFiles/list.dir/tuto_list/list/list.c.o CMakeFiles/list.dir/tuto_list/list/main_list.c.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/Algorithm.dir
+  OBJECT_DIR = CMakeFiles/list.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = Algorithm
-  TARGET_PDB = Algorithm.dbg
+  TARGET_FILE = list
+  TARGET_PDB = list.dbg
 
 # =============================================================================
-# Object build statements for EXECUTABLE target list_normal
+# Object build statements for EXECUTABLE target permutate
 
 
 #############################################
-# Order-only phony target for list_normal
+# Order-only phony target for permutate
 
-build cmake_object_order_depends_target_list_normal: phony || .
+build cmake_object_order_depends_target_permutate: phony || .
 
-build CMakeFiles/list_normal.dir/tuto_list/tuto_list_normal/list_normal.c.o: C_COMPILER__list_normal_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_list/tuto_list_normal/list_normal.c || cmake_object_order_depends_target_list_normal
-  DEP_FILE = CMakeFiles/list_normal.dir/tuto_list/tuto_list_normal/list_normal.c.o.d
+build CMakeFiles/permutate.dir/tuto_stack/stack_list/stack_list.c.o: C_COMPILER__permutate_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/stack_list/stack_list.c || cmake_object_order_depends_target_permutate
+  DEP_FILE = CMakeFiles/permutate.dir/tuto_stack/stack_list/stack_list.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I/home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_list
-  OBJECT_DIR = CMakeFiles/list_normal.dir
-  OBJECT_FILE_DIR = CMakeFiles/list_normal.dir/tuto_list/tuto_list_normal
+  OBJECT_DIR = CMakeFiles/permutate.dir
+  OBJECT_FILE_DIR = CMakeFiles/permutate.dir/tuto_stack/stack_list
 
-build CMakeFiles/list_normal.dir/tuto_list/tuto_list_normal/main_list_normal.c.o: C_COMPILER__list_normal_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_list/tuto_list_normal/main_list_normal.c || cmake_object_order_depends_target_list_normal
-  DEP_FILE = CMakeFiles/list_normal.dir/tuto_list/tuto_list_normal/main_list_normal.c.o.d
+build CMakeFiles/permutate.dir/tuto_stack/main_permutate.c.o: C_COMPILER__permutate_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/main_permutate.c || cmake_object_order_depends_target_permutate
+  DEP_FILE = CMakeFiles/permutate.dir/tuto_stack/main_permutate.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  INCLUDES = -I/home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_list
-  OBJECT_DIR = CMakeFiles/list_normal.dir
-  OBJECT_FILE_DIR = CMakeFiles/list_normal.dir/tuto_list/tuto_list_normal
+  OBJECT_DIR = CMakeFiles/permutate.dir
+  OBJECT_FILE_DIR = CMakeFiles/permutate.dir/tuto_stack
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target list_normal
+# Link build statements for EXECUTABLE target permutate
 
 
 #############################################
-# Link the executable list_normal
+# Link the executable permutate
 
-build list_normal: C_EXECUTABLE_LINKER__list_normal_Debug CMakeFiles/list_normal.dir/tuto_list/tuto_list_normal/list_normal.c.o CMakeFiles/list_normal.dir/tuto_list/tuto_list_normal/main_list_normal.c.o
+build permutate: C_EXECUTABLE_LINKER__permutate_Debug CMakeFiles/permutate.dir/tuto_stack/stack_list/stack_list.c.o CMakeFiles/permutate.dir/tuto_stack/main_permutate.c.o
   FLAGS = -g
-  OBJECT_DIR = CMakeFiles/list_normal.dir
+  OBJECT_DIR = CMakeFiles/permutate.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = list_normal
-  TARGET_PDB = list_normal.dbg
+  TARGET_FILE = permutate
+  TARGET_PDB = permutate.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target stack_sq
+
+
+#############################################
+# Order-only phony target for stack_sq
+
+build cmake_object_order_depends_target_stack_sq: phony || .
+
+build CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/stack_sq.c.o: C_COMPILER__stack_sq_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/stack_sq/stack_sq.c || cmake_object_order_depends_target_stack_sq
+  DEP_FILE = CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/stack_sq.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/stack_sq.dir
+  OBJECT_FILE_DIR = CMakeFiles/stack_sq.dir/tuto_stack/stack_sq
+
+build CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/main_stack_sq.c.o: C_COMPILER__stack_sq_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/stack_sq/main_stack_sq.c || cmake_object_order_depends_target_stack_sq
+  DEP_FILE = CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/main_stack_sq.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/stack_sq.dir
+  OBJECT_FILE_DIR = CMakeFiles/stack_sq.dir/tuto_stack/stack_sq
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target stack_sq
+
+
+#############################################
+# Link the executable stack_sq
+
+build stack_sq: C_EXECUTABLE_LINKER__stack_sq_Debug CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/stack_sq.c.o CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/main_stack_sq.c.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/stack_sq.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = stack_sq
+  TARGET_PDB = stack_sq.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target tree_bi
+
+
+#############################################
+# Order-only phony target for tree_bi
+
+build cmake_object_order_depends_target_tree_bi: phony || .
+
+build CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/tree_bi.c.o: C_COMPILER__tree_bi_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_tree/tree_bi/tree_bi.c || cmake_object_order_depends_target_tree_bi
+  DEP_FILE = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/tree_bi.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/tree_bi.dir
+  OBJECT_FILE_DIR = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi
+
+build CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/main_tree_bi.c.o: C_COMPILER__tree_bi_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_tree/tree_bi/main_tree_bi.c || cmake_object_order_depends_target_tree_bi
+  DEP_FILE = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/main_tree_bi.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/tree_bi.dir
+  OBJECT_FILE_DIR = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi
+
+build CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls.c.o: C_COMPILER__tree_bi_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_tree/tree_bi/queue_ls.c || cmake_object_order_depends_target_tree_bi
+  DEP_FILE = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/tree_bi.dir
+  OBJECT_FILE_DIR = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target tree_bi
+
+
+#############################################
+# Link the executable tree_bi
+
+build tree_bi: C_EXECUTABLE_LINKER__tree_bi_Debug CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/tree_bi.c.o CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/main_tree_bi.c.o CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls.c.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/tree_bi.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = tree_bi
+  TARGET_PDB = tree_bi.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target queue_ls
+
+
+#############################################
+# Order-only phony target for queue_ls
+
+build cmake_object_order_depends_target_queue_ls: phony || .
+
+build CMakeFiles/queue_ls.dir/tuto_queue/queue_list/queue_ls.c.o: C_COMPILER__queue_ls_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_queue/queue_list/queue_ls.c || cmake_object_order_depends_target_queue_ls
+  DEP_FILE = CMakeFiles/queue_ls.dir/tuto_queue/queue_list/queue_ls.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/queue_ls.dir
+  OBJECT_FILE_DIR = CMakeFiles/queue_ls.dir/tuto_queue/queue_list
+
+build CMakeFiles/queue_ls.dir/tuto_queue/queue_list/main_queue_ls.c.o: C_COMPILER__queue_ls_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_queue/queue_list/main_queue_ls.c || cmake_object_order_depends_target_queue_ls
+  DEP_FILE = CMakeFiles/queue_ls.dir/tuto_queue/queue_list/main_queue_ls.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/queue_ls.dir
+  OBJECT_FILE_DIR = CMakeFiles/queue_ls.dir/tuto_queue/queue_list
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target queue_ls
+
+
+#############################################
+# Link the executable queue_ls
+
+build queue_ls: C_EXECUTABLE_LINKER__queue_ls_Debug CMakeFiles/queue_ls.dir/tuto_queue/queue_list/queue_ls.c.o CMakeFiles/queue_ls.dir/tuto_queue/queue_list/main_queue_ls.c.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/queue_ls.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = queue_ls
+  TARGET_PDB = queue_ls.dbg
+
+# =============================================================================
+# Object build statements for EXECUTABLE target KMP
+
+
+#############################################
+# Order-only phony target for KMP
+
+build cmake_object_order_depends_target_KMP: phony || .
+
+build CMakeFiles/KMP.dir/tuto_str/KMP.c.o: C_COMPILER__KMP_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_str/KMP.c || cmake_object_order_depends_target_KMP
+  DEP_FILE = CMakeFiles/KMP.dir/tuto_str/KMP.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/KMP.dir
+  OBJECT_FILE_DIR = CMakeFiles/KMP.dir/tuto_str
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target KMP
+
+
+#############################################
+# Link the executable KMP
+
+build KMP: C_EXECUTABLE_LINKER__KMP_Debug CMakeFiles/KMP.dir/tuto_str/KMP.c.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/KMP.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = KMP
+  TARGET_PDB = KMP.dbg
 
 
 #############################################
@@ -145,7 +296,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug
 
-build all: phony Algorithm list_normal
+build all: phony list permutate stack_sq tree_bi queue_ls KMP
 
 # =============================================================================
 # Built-in targets

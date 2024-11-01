@@ -1,4 +1,8 @@
-/home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/Algorithm.dir
-/home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/list_normal.dir
+/home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/list.dir
+/home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/permutate.dir
+/home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/stack_sq.dir
+/home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/tree_bi.dir
+/home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/queue_ls.dir
+/home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/KMP.dir
 /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir

@@ -28,7 +28,7 @@ void permutateNK(const int n, const int k, int arr[], int used[]) {
         }
 
         used[i] = 1;
-        Data data;
+        TreeData data;
         data.value = arr[i];
         data.Id.id = -1;
         pushStack(&stack, data);

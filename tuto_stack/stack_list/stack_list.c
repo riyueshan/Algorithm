@@ -8,7 +8,7 @@ void initStack(Stack *stack) {
     stack->len = 0;
 }
 
-void pushStack(Stack *stack, Data data) {
+void pushStack(Stack *stack, TreeData data) {
     NodePtr newNode = (NodePtr) malloc(sizeof(Node));
     if (newNode == NULL) {
         fprintf(stderr, "Memory allocation failed.\n");
@@ -27,24 +27,24 @@ void pushStack(Stack *stack, Data data) {
     stack->top = newNode;
 }
 
-Data popStack(Stack *stack) {
+TreeData popStack(Stack *stack) {
     if (stack->top == NULL) {
         fprintf(stderr, "Stack is empty.\n");
         exit(1);
     }
 
     NodePtr temp = stack->top;
-    Data data = temp->data;
+    TreeData data = temp->data;
     stack->top = temp->next;
     free(temp);
     stack->len--;
     return data;
 }
 
-Data topStack(const Stack stack) {
+TreeData topStack(const Stack stack) {
     if (!stack.len) {
         fprintf(stderr, "Stack is empty.\n");
-        return (Data){0};
+        return (TreeData){0};
     }
     return stack.top->data;
 }
