@@ -1,7 +1,7 @@
 #ifndef QUEUE_LS_H
 #define QUEUE_LS_H
 
-#include "data_queue.h"
+#include "../data_queue.h"
 
 void initLsQueue(LsQueue *queue);
 

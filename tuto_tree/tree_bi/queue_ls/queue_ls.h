@@ -5,7 +5,7 @@
 #ifndef QUEUE_LIST_H
 #define QUEUE_LIST_H
 
-#include "data_tree.h"
+#include "../data_tree.h"
 
 typedef struct Lsqueue {
 	LsQuNode *front;

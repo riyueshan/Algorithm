@@ -13,9 +13,12 @@ int main(void) {
 
 	LsQuData data = deLsQueue(&queue);
 	printf("Pop: %d\t%c\n", data.id, data.value);
+	printf("current\n");
+	traverseLsQueue(queue);
 
 	printf("Push 6\n");
 	enLsQueue(&queue, (LsQuData){6, 'f'});
+	printf("current\n");
 	traverseLsQueue(queue);
 
 	freeLsQueue(&queue);

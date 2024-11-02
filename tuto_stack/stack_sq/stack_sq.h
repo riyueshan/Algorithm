@@ -1,33 +1,30 @@
 #ifndef STACK_SEQUENTIAL_H
 #define STACK_SEQUENTIAL_H
 
-typedef struct ID {
-    int id;
-} ID;
+#include "../data_stack.h"
 
-typedef struct {
-    ID Id;
-    int data;
-} Elem;
-
-typedef Elem *ElemPtr;
-
-typedef struct {
-    Elem *base;
-    int top;
-    int capacity;
-    int len;
+typedef struct SqStack {
+	SqStData *base;
+	int top;
+	int capacity;
+	int size;
 } SqStack;
 
-void initSqStack(SqStack *stack_sq);
 
-void clearSqStack(SqStack stack_sq);
+void initSqStack(SqStack *stack,int capacity);
 
-Elem topSqStack(SqStack stack_sq);
+int isSqStEmpty(SqStack stack);
 
-void pushSqStack(SqStack stack_sq, Elem e);
+int isSqStFull(SqStack stack);
 
-ElemPtr getElem(SqStack stack_sq);
+void freeSqStack(SqStack *stack);
 
-Elem popSqStack(SqStack stack_sq);
+SqStData popSqStack(SqStack *stack);
+
+void pushSqStack(SqStack *stack, SqStData data);
+
+void printSqStData(SqStData data);
+
+void traverseSqStack(SqStack stack);
+
 #endif // STACK_SEQUENTIAL_H

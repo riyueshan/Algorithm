@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 #include "tree_bi.h"
-#include "queue_ls.h"
+#include "queue_ls/queue_ls.h"
 
 BiTrNode *createBiTrNode(BiTrData data) {
 	BiTrNode *node = malloc(sizeof(BiTrNode));

@@ -17,15 +17,15 @@ void initList(LsNode **list) {
 }
 
 LsNode *createLsNode(LsData data) {
-	LsNode *tmp = malloc(sizeof(LsNode));
-	if (!tmp) {
+	LsNode *node = malloc(sizeof(LsNode));
+	if (!node) {
 		fprintf(stderr, "Memory allocation failed!!!\n");
 		exit(-1);
 	}
 
-	tmp->data = data;
-	tmp->next = NULL;
-	return tmp;
+	node->data = data;
+	node->next = NULL;
+	return node;
 }
 
 void addLsNode(LsNode **list, LsData data) {

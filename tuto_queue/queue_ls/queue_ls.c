@@ -16,6 +16,10 @@ int isLsQuEmpty(LsQueue *queue) {
 
 LsQuNode *createLsQuNode(LsQuData data) {
 	LsQuNode *node = (LsQuNode *) malloc(sizeof(LsQuNode));
+	if (!node) {
+		fprintf(stderr, "Memory allocation failed!!!\n");
+		exit(-1);
+	}
 	node->data = data;
 	node->next = NULL;
 	return node;

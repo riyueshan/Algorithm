@@ -86,17 +86,17 @@ build list: C_EXECUTABLE_LINKER__list_Debug CMakeFiles/list.dir/tuto_list/list/l
 
 build cmake_object_order_depends_target_permutate: phony || .
 
-build CMakeFiles/permutate.dir/tuto_stack/stack_list/stack_list.c.o: C_COMPILER__permutate_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/stack_list/stack_list.c || cmake_object_order_depends_target_permutate
-  DEP_FILE = CMakeFiles/permutate.dir/tuto_stack/stack_list/stack_list.c.o.d
-  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles/permutate.dir
-  OBJECT_FILE_DIR = CMakeFiles/permutate.dir/tuto_stack/stack_list
-
-build CMakeFiles/permutate.dir/tuto_stack/main_permutate.c.o: C_COMPILER__permutate_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/main_permutate.c || cmake_object_order_depends_target_permutate
-  DEP_FILE = CMakeFiles/permutate.dir/tuto_stack/main_permutate.c.o.d
+build CMakeFiles/permutate.dir/tuto_stack/permutate.c.o: C_COMPILER__permutate_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/permutate.c || cmake_object_order_depends_target_permutate
+  DEP_FILE = CMakeFiles/permutate.dir/tuto_stack/permutate.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/permutate.dir
   OBJECT_FILE_DIR = CMakeFiles/permutate.dir/tuto_stack
+
+build CMakeFiles/permutate.dir/tuto_stack/stack_ls/stack_ls.c.o: C_COMPILER__permutate_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/stack_ls/stack_ls.c || cmake_object_order_depends_target_permutate
+  DEP_FILE = CMakeFiles/permutate.dir/tuto_stack/stack_ls/stack_ls.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/permutate.dir
+  OBJECT_FILE_DIR = CMakeFiles/permutate.dir/tuto_stack/stack_ls
 
 
 # =============================================================================
@@ -106,7 +106,7 @@ build CMakeFiles/permutate.dir/tuto_stack/main_permutate.c.o: C_COMPILER__permut
 #############################################
 # Link the executable permutate
 
-build permutate: C_EXECUTABLE_LINKER__permutate_Debug CMakeFiles/permutate.dir/tuto_stack/stack_list/stack_list.c.o CMakeFiles/permutate.dir/tuto_stack/main_permutate.c.o
+build permutate: C_EXECUTABLE_LINKER__permutate_Debug CMakeFiles/permutate.dir/tuto_stack/permutate.c.o CMakeFiles/permutate.dir/tuto_stack/stack_ls/stack_ls.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/permutate.dir
   POST_BUILD = :
@@ -123,14 +123,14 @@ build permutate: C_EXECUTABLE_LINKER__permutate_Debug CMakeFiles/permutate.dir/t
 
 build cmake_object_order_depends_target_stack_sq: phony || .
 
-build CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/stack_sq.c.o: C_COMPILER__stack_sq_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/stack_sq/stack_sq.c || cmake_object_order_depends_target_stack_sq
-  DEP_FILE = CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/stack_sq.c.o.d
+build CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/main_stack_sq.c.o: C_COMPILER__stack_sq_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/stack_sq/main_stack_sq.c || cmake_object_order_depends_target_stack_sq
+  DEP_FILE = CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/main_stack_sq.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/stack_sq.dir
   OBJECT_FILE_DIR = CMakeFiles/stack_sq.dir/tuto_stack/stack_sq
 
-build CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/main_stack_sq.c.o: C_COMPILER__stack_sq_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/stack_sq/main_stack_sq.c || cmake_object_order_depends_target_stack_sq
-  DEP_FILE = CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/main_stack_sq.c.o.d
+build CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/stack_sq.c.o: C_COMPILER__stack_sq_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/stack_sq/stack_sq.c || cmake_object_order_depends_target_stack_sq
+  DEP_FILE = CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/stack_sq.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/stack_sq.dir
   OBJECT_FILE_DIR = CMakeFiles/stack_sq.dir/tuto_stack/stack_sq
@@ -143,7 +143,7 @@ build CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/main_stack_sq.c.o: C_COMPILER_
 #############################################
 # Link the executable stack_sq
 
-build stack_sq: C_EXECUTABLE_LINKER__stack_sq_Debug CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/stack_sq.c.o CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/main_stack_sq.c.o
+build stack_sq: C_EXECUTABLE_LINKER__stack_sq_Debug CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/main_stack_sq.c.o CMakeFiles/stack_sq.dir/tuto_stack/stack_sq/stack_sq.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/stack_sq.dir
   POST_BUILD = :
@@ -172,11 +172,11 @@ build CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/main_tree_bi.c.o: C_COMPILER__tre
   OBJECT_DIR = CMakeFiles/tree_bi.dir
   OBJECT_FILE_DIR = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi
 
-build CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls.c.o: C_COMPILER__tree_bi_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_tree/tree_bi/queue_ls.c || cmake_object_order_depends_target_tree_bi
-  DEP_FILE = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls.c.o.d
+build CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls/queue_ls.c.o: C_COMPILER__tree_bi_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_tree/tree_bi/queue_ls/queue_ls.c || cmake_object_order_depends_target_tree_bi
+  DEP_FILE = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls/queue_ls.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/tree_bi.dir
-  OBJECT_FILE_DIR = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi
+  OBJECT_FILE_DIR = CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls
 
 
 # =============================================================================
@@ -186,7 +186,7 @@ build CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls.c.o: C_COMPILER__tree_bi
 #############################################
 # Link the executable tree_bi
 
-build tree_bi: C_EXECUTABLE_LINKER__tree_bi_Debug CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/tree_bi.c.o CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/main_tree_bi.c.o CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls.c.o
+build tree_bi: C_EXECUTABLE_LINKER__tree_bi_Debug CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/tree_bi.c.o CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/main_tree_bi.c.o CMakeFiles/tree_bi.dir/tuto_tree/tree_bi/queue_ls/queue_ls.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/tree_bi.dir
   POST_BUILD = :
@@ -203,17 +203,17 @@ build tree_bi: C_EXECUTABLE_LINKER__tree_bi_Debug CMakeFiles/tree_bi.dir/tuto_tr
 
 build cmake_object_order_depends_target_queue_ls: phony || .
 
-build CMakeFiles/queue_ls.dir/tuto_queue/queue_list/queue_ls.c.o: C_COMPILER__queue_ls_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_queue/queue_list/queue_ls.c || cmake_object_order_depends_target_queue_ls
-  DEP_FILE = CMakeFiles/queue_ls.dir/tuto_queue/queue_list/queue_ls.c.o.d
+build CMakeFiles/queue_ls.dir/tuto_queue/queue_ls/queue_ls.c.o: C_COMPILER__queue_ls_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_queue/queue_ls/queue_ls.c || cmake_object_order_depends_target_queue_ls
+  DEP_FILE = CMakeFiles/queue_ls.dir/tuto_queue/queue_ls/queue_ls.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/queue_ls.dir
-  OBJECT_FILE_DIR = CMakeFiles/queue_ls.dir/tuto_queue/queue_list
+  OBJECT_FILE_DIR = CMakeFiles/queue_ls.dir/tuto_queue/queue_ls
 
-build CMakeFiles/queue_ls.dir/tuto_queue/queue_list/main_queue_ls.c.o: C_COMPILER__queue_ls_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_queue/queue_list/main_queue_ls.c || cmake_object_order_depends_target_queue_ls
-  DEP_FILE = CMakeFiles/queue_ls.dir/tuto_queue/queue_list/main_queue_ls.c.o.d
+build CMakeFiles/queue_ls.dir/tuto_queue/queue_ls/main_queue_ls.c.o: C_COMPILER__queue_ls_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_queue/queue_ls/main_queue_ls.c || cmake_object_order_depends_target_queue_ls
+  DEP_FILE = CMakeFiles/queue_ls.dir/tuto_queue/queue_ls/main_queue_ls.c.o.d
   FLAGS = -g -std=gnu11 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles/queue_ls.dir
-  OBJECT_FILE_DIR = CMakeFiles/queue_ls.dir/tuto_queue/queue_list
+  OBJECT_FILE_DIR = CMakeFiles/queue_ls.dir/tuto_queue/queue_ls
 
 
 # =============================================================================
@@ -223,7 +223,7 @@ build CMakeFiles/queue_ls.dir/tuto_queue/queue_list/main_queue_ls.c.o: C_COMPILE
 #############################################
 # Link the executable queue_ls
 
-build queue_ls: C_EXECUTABLE_LINKER__queue_ls_Debug CMakeFiles/queue_ls.dir/tuto_queue/queue_list/queue_ls.c.o CMakeFiles/queue_ls.dir/tuto_queue/queue_list/main_queue_ls.c.o
+build queue_ls: C_EXECUTABLE_LINKER__queue_ls_Debug CMakeFiles/queue_ls.dir/tuto_queue/queue_ls/queue_ls.c.o CMakeFiles/queue_ls.dir/tuto_queue/queue_ls/main_queue_ls.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/queue_ls.dir
   POST_BUILD = :
@@ -246,6 +246,12 @@ build CMakeFiles/KMP.dir/tuto_str/KMP.c.o: C_COMPILER__KMP_unscanned_Debug /home
   OBJECT_DIR = CMakeFiles/KMP.dir
   OBJECT_FILE_DIR = CMakeFiles/KMP.dir/tuto_str
 
+build CMakeFiles/KMP.dir/tuto_stack/stack_ls/stack_ls.c.o: C_COMPILER__KMP_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_stack/stack_ls/stack_ls.c || cmake_object_order_depends_target_KMP
+  DEP_FILE = CMakeFiles/KMP.dir/tuto_stack/stack_ls/stack_ls.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/KMP.dir
+  OBJECT_FILE_DIR = CMakeFiles/KMP.dir/tuto_stack/stack_ls
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target KMP
@@ -254,7 +260,7 @@ build CMakeFiles/KMP.dir/tuto_str/KMP.c.o: C_COMPILER__KMP_unscanned_Debug /home
 #############################################
 # Link the executable KMP
 
-build KMP: C_EXECUTABLE_LINKER__KMP_Debug CMakeFiles/KMP.dir/tuto_str/KMP.c.o
+build KMP: C_EXECUTABLE_LINKER__KMP_Debug CMakeFiles/KMP.dir/tuto_str/KMP.c.o CMakeFiles/KMP.dir/tuto_stack/stack_ls/stack_ls.c.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/KMP.dir
   POST_BUILD = :
