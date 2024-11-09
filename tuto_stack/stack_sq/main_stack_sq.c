@@ -2,22 +2,26 @@
 #include "stack_sq.h"
 
 int main(void) {
-    SqStack stack_sq;
+    SqStack stack;
 
     int n;
     printf("Enter the capacity of sequential stack\n");
     scanf("%d", &n);
-    stack_sq.capacity = n;
-    initSqStack(&stack_sq);
+    initSqStack(&stack,n);
 
-    // TEST: pointer and index
-    printf("Stack created at %p\n", &stack_sq);
-    printf("Stack base at %p\n", stack_sq.base);
-    printf("Stack base[0] at %p\n", &(stack_sq.base[0]));
-    printf("element on base[0] before assignment is %d\n", stack_sq.base[0].data);
-    Elem elem = {{0}, 1};
-    pushSqStack(stack_sq, elem);
-    printf("element on base[0] is %d\n", stack_sq.base[0].data);
+    for(int i=0;i<n;i++) {
+        pushSqStack(&stack,(SqStData){i+1,'a'+i});
+    }
 
+    traverseSqStack(stack);
+
+    printf("Poping...\n");
+    SqStData data=popSqStack(&stack);
+    printf("popped:\t");
+    printSqStData(data);
+    printf("current\n");
+    traverseSqStack(stack);
+
+    freeSqStack(&stack);
     return 0;
 }

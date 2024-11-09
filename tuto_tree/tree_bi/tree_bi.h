@@ -1,32 +1,22 @@
 #ifndef TREE_BI_H
 #define TREE_BI_H
 
-#include "data.h"
+#include "../data_tree.h"
 
-typedef struct BiNode {
-    // trinary linked list
-    Data data;
-    struct BiNode *parent;
-    struct BiNode *left;
-    struct BiNode *right;
-} BiNode;
+BiTrNode *createBiTrNode(BiTrData data);
 
-typedef BiNode* BiNodePtr;
+BiTrNode *createBitree(BiTrData *data, int n);
 
-void initBiTree(BiNodePtr *root);
+void traversePreOrder(BiTrNode *root);
 
-BiNodePtr getParent(BiNodePtr root, Data data);
+void traverseInOrder(BiTrNode *root);
 
-void insertBiNode_Left(BiNodePtr *root, Data data);
+void traversePostOrder(BiTrNode *root);
 
-void insertBiNode_Right(BiNodePtr *root, Data data);
+void traverseLevelOrder(BiTrNode *root);
 
-void traverseBiTree_LDR(BiNodePtr root);
+void freeBiTree(BiTrNode **tree);
 
-void traverseBiTree_DLR(BiNodePtr root);
-
-void traverseBiTree_LRD(BiNodePtr root);
-
-void traverseBiTree_LR(BiNodePtr root);
+void printBiTrNode(BiTrNode *node);
 
 #endif // TREE_BI_H

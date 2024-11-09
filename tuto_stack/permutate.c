@@ -1,24 +1,15 @@
 #include <stdio.h>
 
-#include "stack_list/stack_list.h"
+#include "stack_ls/stack_ls.h"
 #define N_MAX 100
 #define K_MAX N_MAX
 
-Stack stack;
-
-void printStack(const Stack *stack) {
-    NodePtr p = getNode(stack);
-    while (p) {
-        printf("%d ", p->data.value);
-        p = p->next;
-    }
-    printf("\n");
-}
-
+LsStack stack;
 
 void permutateNK(const int n, const int k, int arr[], int used[]) {
-    if (stack.len == k) {
-        printStack(&stack);
+    if (stack.size == k) {
+        traverseLsStack(stack);
+        printf("\n");
         return;
     }
 
@@ -28,14 +19,14 @@ void permutateNK(const int n, const int k, int arr[], int used[]) {
         }
 
         used[i] = 1;
-        Data data;
+        LsStData data;
         data.value = arr[i];
-        data.Id.id = -1;
-        pushStack(&stack, data);
+        data.id = -1;
+        pushLsStack(&stack, data);
         permutateNK(n, k, arr, used);
 
         used[i] = 0;
-        popStack(&stack);
+        popLsStack(&stack);
     }
 }
 
@@ -45,13 +36,13 @@ int main(void) {
 
     int n, k;
     printf("Enter N and K,100>=N>=K>1\n");
-    scanf("%d%d", &n, &k);
+    scanf("%d%d",&n,&k);
 
     for (int i = 0; i < n; i++) {
         arr[i] = i + 1;
     }
 
-    initStack(&stack);
+    initLsStack(&stack);
     permutateNK(n, k, arr, used);
 
     return 0;
