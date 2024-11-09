@@ -268,6 +268,55 @@ build KMP: C_EXECUTABLE_LINKER__KMP_Debug CMakeFiles/KMP.dir/tuto_str/KMP.c.o CM
   TARGET_FILE = KMP
   TARGET_PDB = KMP.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target Huffman
+
+
+#############################################
+# Order-only phony target for Huffman
+
+build cmake_object_order_depends_target_Huffman: phony || .
+
+build CMakeFiles/Huffman.dir/tuto_tree/Huffman/Huffman.c.o: C_COMPILER__Huffman_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_tree/Huffman/Huffman.c || cmake_object_order_depends_target_Huffman
+  DEP_FILE = CMakeFiles/Huffman.dir/tuto_tree/Huffman/Huffman.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Huffman.dir
+  OBJECT_FILE_DIR = CMakeFiles/Huffman.dir/tuto_tree/Huffman
+
+build CMakeFiles/Huffman.dir/tuto_tree/Huffman/stack_ls/stack_ls.c.o: C_COMPILER__Huffman_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_tree/Huffman/stack_ls/stack_ls.c || cmake_object_order_depends_target_Huffman
+  DEP_FILE = CMakeFiles/Huffman.dir/tuto_tree/Huffman/stack_ls/stack_ls.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Huffman.dir
+  OBJECT_FILE_DIR = CMakeFiles/Huffman.dir/tuto_tree/Huffman/stack_ls
+
+build CMakeFiles/Huffman.dir/tuto_tree/Huffman/tree_hf/tree_hf.c.o: C_COMPILER__Huffman_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_tree/Huffman/tree_hf/tree_hf.c || cmake_object_order_depends_target_Huffman
+  DEP_FILE = CMakeFiles/Huffman.dir/tuto_tree/Huffman/tree_hf/tree_hf.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Huffman.dir
+  OBJECT_FILE_DIR = CMakeFiles/Huffman.dir/tuto_tree/Huffman/tree_hf
+
+build CMakeFiles/Huffman.dir/tuto_tree/Huffman/main_Huffman.c.o: C_COMPILER__Huffman_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_tree/Huffman/main_Huffman.c || cmake_object_order_depends_target_Huffman
+  DEP_FILE = CMakeFiles/Huffman.dir/tuto_tree/Huffman/main_Huffman.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Huffman.dir
+  OBJECT_FILE_DIR = CMakeFiles/Huffman.dir/tuto_tree/Huffman
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target Huffman
+
+
+#############################################
+# Link the executable Huffman
+
+build Huffman: C_EXECUTABLE_LINKER__Huffman_Debug CMakeFiles/Huffman.dir/tuto_tree/Huffman/Huffman.c.o CMakeFiles/Huffman.dir/tuto_tree/Huffman/stack_ls/stack_ls.c.o CMakeFiles/Huffman.dir/tuto_tree/Huffman/tree_hf/tree_hf.c.o CMakeFiles/Huffman.dir/tuto_tree/Huffman/main_Huffman.c.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/Huffman.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = Huffman
+  TARGET_PDB = Huffman.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -302,7 +351,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug
 
-build all: phony list permutate stack_sq tree_bi queue_ls KMP
+build all: phony list permutate stack_sq tree_bi queue_ls KMP Huffman
 
 # =============================================================================
 # Built-in targets

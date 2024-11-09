@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.29)
+cmake_minimum_required(VERSION 3.28.3)
 project(Algorithm C)
 
 set(CMAKE_C_STANDARD 11)
@@ -29,3 +29,10 @@ add_executable(queue_ls
 add_executable(KMP
         tuto_str/KMP.c
         tuto_stack/stack_ls/stack_ls.c)
+
+add_executable(Huffman
+        tuto_tree/Huffman/Huffman.h
+        tuto_tree/Huffman/Huffman.c
+        tuto_tree/Huffman/stack_ls/stack_ls.c
+        tuto_tree/Huffman/tree_hf/tree_hf.c
+        tuto_tree/Huffman/main_Huffman.c)

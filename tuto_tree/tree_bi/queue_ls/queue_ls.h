@@ -5,7 +5,16 @@
 #ifndef QUEUE_LIST_H
 #define QUEUE_LIST_H
 
-#include "../data_tree.h"
+#include "../../data_tree.h"
+
+typedef struct LsQuData {
+	BiTrNode *bi_node;
+} LsQuData;
+
+typedef struct LsQuNode {
+	LsQuData data_qu;
+	struct LsQuNode *next;
+} LsQuNode;
 
 typedef struct Lsqueue {
 	LsQuNode *front;

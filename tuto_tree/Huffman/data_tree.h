@@ -1,35 +1,33 @@
-//
-// Created by riyueshan on 10/22/24.
-//
-
 #ifndef DATA_TREE_H
 #define DATA_TREE_H
 
-typedef struct BiTrData
-{
+typedef struct BiTrData {
 	int id;
 	char value;
 } BiTrData;
 
-typedef struct BiTrNode
-{
+typedef struct BiTrNode {
 	// binary linked list
 	BiTrData data_bi;
 	struct BiTrNode *left;
 	struct BiTrNode *right;
 } BiTrNode;
 
-typedef struct HfTrData
-{
+typedef struct HfTrData {
 	int weight;
 	char value;
 } HfTrData;
 
-typedef struct SqHfTrNode
-{
+typedef struct SqHfTrNode {
 	HfTrData data_hf;
 	int parent, lchild, rchild;
 } SqHfTrNode;
+
+typedef struct SqHfTree {
+	SqHfTrNode *tree;
+	int root;
+	int size;
+} SqHfTree;
 
 extern HfTrData NoneHfTrData;
 

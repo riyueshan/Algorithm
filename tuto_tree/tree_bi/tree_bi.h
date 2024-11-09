@@ -1,7 +1,7 @@
 #ifndef TREE_BI_H
 #define TREE_BI_H
 
-#include "data_tree.h"
+#include "../data_tree.h"
 
 BiTrNode *createBiTrNode(BiTrData data);
 
