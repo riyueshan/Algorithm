@@ -5,5 +5,6 @@
 /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/queue_ls.dir
 /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/KMP.dir
 /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/Huffman.dir
+/home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/graph_adj.dir
 /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug/CMakeFiles/rebuild_cache.dir

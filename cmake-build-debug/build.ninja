@@ -317,6 +317,49 @@ build Huffman: C_EXECUTABLE_LINKER__Huffman_Debug CMakeFiles/Huffman.dir/tuto_tr
   TARGET_FILE = Huffman
   TARGET_PDB = Huffman.dbg
 
+# =============================================================================
+# Object build statements for EXECUTABLE target graph_adj
+
+
+#############################################
+# Order-only phony target for graph_adj
+
+build cmake_object_order_depends_target_graph_adj: phony || .
+
+build CMakeFiles/graph_adj.dir/tuto_graph/graph_adj/graph_adj.c.o: C_COMPILER__graph_adj_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_graph/graph_adj/graph_adj.c || cmake_object_order_depends_target_graph_adj
+  DEP_FILE = CMakeFiles/graph_adj.dir/tuto_graph/graph_adj/graph_adj.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/graph_adj.dir
+  OBJECT_FILE_DIR = CMakeFiles/graph_adj.dir/tuto_graph/graph_adj
+
+build CMakeFiles/graph_adj.dir/tuto_graph/graph_adj/main_graph_adj.c.o: C_COMPILER__graph_adj_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_graph/graph_adj/main_graph_adj.c || cmake_object_order_depends_target_graph_adj
+  DEP_FILE = CMakeFiles/graph_adj.dir/tuto_graph/graph_adj/main_graph_adj.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/graph_adj.dir
+  OBJECT_FILE_DIR = CMakeFiles/graph_adj.dir/tuto_graph/graph_adj
+
+build CMakeFiles/graph_adj.dir/tuto_graph/graph_adj/queue_ls/queue_ls.c.o: C_COMPILER__graph_adj_unscanned_Debug /home/riyueshan/T/Tuto/Algorithm/algorithm/tuto_graph/graph_adj/queue_ls/queue_ls.c || cmake_object_order_depends_target_graph_adj
+  DEP_FILE = CMakeFiles/graph_adj.dir/tuto_graph/graph_adj/queue_ls/queue_ls.c.o.d
+  FLAGS = -g -std=gnu11 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/graph_adj.dir
+  OBJECT_FILE_DIR = CMakeFiles/graph_adj.dir/tuto_graph/graph_adj/queue_ls
+
+
+# =============================================================================
+# Link build statements for EXECUTABLE target graph_adj
+
+
+#############################################
+# Link the executable graph_adj
+
+build graph_adj: C_EXECUTABLE_LINKER__graph_adj_Debug CMakeFiles/graph_adj.dir/tuto_graph/graph_adj/graph_adj.c.o CMakeFiles/graph_adj.dir/tuto_graph/graph_adj/main_graph_adj.c.o CMakeFiles/graph_adj.dir/tuto_graph/graph_adj/queue_ls/queue_ls.c.o
+  FLAGS = -g
+  OBJECT_DIR = CMakeFiles/graph_adj.dir
+  POST_BUILD = :
+  PRE_LINK = :
+  TARGET_FILE = graph_adj
+  TARGET_PDB = graph_adj.dbg
+
 
 #############################################
 # Utility command for edit_cache
@@ -351,7 +394,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/riyueshan/T/Tuto/Algorithm/algorithm/cmake-build-debug
 
-build all: phony list permutate stack_sq tree_bi queue_ls KMP Huffman
+build all: phony list permutate stack_sq tree_bi queue_ls KMP Huffman graph_adj
 
 # =============================================================================
 # Built-in targets

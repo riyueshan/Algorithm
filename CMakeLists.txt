@@ -36,3 +36,8 @@ add_executable(Huffman
         tuto_tree/Huffman/stack_ls/stack_ls.c
         tuto_tree/Huffman/tree_hf/tree_hf.c
         tuto_tree/Huffman/main_Huffman.c)
+add_executable(graph_adj
+        tuto_graph/graph_adj/graph_adj.c
+        tuto_graph/graph_adj/graph_adj.h
+        tuto_graph/graph_adj/main_graph_adj.c
+        tuto_graph/graph_adj/queue_ls/queue_ls.c)
