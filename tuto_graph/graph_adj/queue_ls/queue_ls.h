@@ -6,8 +6,9 @@
 #define QUEUE_LIST_H
 
 #include "../../data_graph.h"
+
 typedef struct LsQuData {
-	ArcNode* node;
+	int vex;
 } LsQuData;
 
 typedef struct LsQuNode {

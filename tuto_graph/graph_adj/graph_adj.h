@@ -30,7 +30,7 @@ int DFSearch(ALGraph *graph);
 
 void BFS(ALGraph* graph, int v, int visited[]);
 
-void BFSearch(ALGraph* graph);
+int BFSearch(ALGraph *graph);
 
 ALGraph* miniSpanTree_Prim(ALGraph* graph);
 
